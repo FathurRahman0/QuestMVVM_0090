@@ -16,3 +16,8 @@ import com.example.pertemuan_8.model.DataJK.JenisK
 import com.example.pertemuan_8.view.FormSiswa
 import com.example.pertemuan_8.view.TampilSiswa
 import com.example.pertemuan_8.viewmodel.SiswaViewModel
+
+enum class Navigasi {
+    Formulir,
+    Detail
+}
