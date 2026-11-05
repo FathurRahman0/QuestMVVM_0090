@@ -12,16 +12,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.pertemuan_8.ui.theme.Pertemuan_8Theme
+import com.example.pertemuan_8.view.uicontroller.SiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Pertemuan_8Theme {
+            Pertemuan_8Theme() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    SiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
